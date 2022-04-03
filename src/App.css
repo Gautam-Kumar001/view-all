@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  background-color: black;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url('./assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+.fnot-face-gm{
+  font-family: "Lato";
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.my-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* background-color: blue; */
+  transform: translateX(-50%) translateY(-50%);
+  /* width: 86px; */
+  /* color: beige; */
+  z-index: 1;
+  border-radius: 10px;
+  height: 120vh;
+  width: 100%;
+  box-shadow: inset 2000px 0 0 0 rgb(0 0 0 / 75%);
+  border-color: rgba(0, 0, 0, 1);
+  color: white;
+  /* font-weight: bold; */
+  border: 2px solid #f1f1f1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#pdfviewer {
+  width: auto;
+  margin: 0 auto;
+  height: 110%;
+  /* position: absolute; */
+  /* top: 0;
+  bottom: 0; */
+}
+#pdfviewer .viewer-layout-toolbar {
+  background: #000;
+  color: #fff;
+}
+
+#pdfviewer .viewer-icon{
+  stroke: #fff;
+  stroke-width: 3px;
+}
+
+#pdfviewer .viewer-zoom-popover-target-arrow {
+  border-color: rgb(255 255 255 / 90%) transparent transparent;
+}
+
+#pdfviewer .viewer-menu-item-label, #pdfviewer .viewer-search-popover-label, #pdfviewer .viewer-menu, #pdfviewer .viewer-menu .viewer-icon{
+  color: #000;
+  stroke: #000;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
