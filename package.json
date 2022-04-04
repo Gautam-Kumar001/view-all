@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://shared.a1office.co/view-all",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
